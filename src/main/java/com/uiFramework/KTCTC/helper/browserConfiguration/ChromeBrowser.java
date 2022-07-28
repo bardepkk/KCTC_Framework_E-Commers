@@ -7,7 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import com.uiFramework.KTCTC.helper.resource.ResourceHelper;
 
 public class ChromeBrowser {
 
@@ -17,7 +16,7 @@ public class ChromeBrowser {
 		ChromeOptions option = new ChromeOptions();
 		option.addArguments("--disable-popup-blocking");
 		option.addArguments("--start-maximized");
-		option.addArguments("--incognito");
+		//option.addArguments("--incognito");
 		//option.setBinary("/path/to/other/chrome/binary");
 		//option.addArguments("--headless");
 		
@@ -41,11 +40,11 @@ public class ChromeBrowser {
 	private WebDriver getChromeDriver(ChromeOptions cap) {
 
 		if (System.getProperty("os.name").contains("Mac")){
-			System.setProperty("webdriver.chrome.driver", ResourceHelper.getResourcePath("src/main/resources/drivers/chromedriver"));
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\resources\\drivers\\chromedriver");
 			return new ChromeDriver(cap);
 		}
 		else if(System.getProperty("os.name").contains("Window")){
-			System.setProperty("webdriver.chrome.driver", ResourceHelper.getResourcePath("src/main/resources/drivers/chromedriver.exe"));
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\resources\\drivers\\chromedriver.exe");
 			return new ChromeDriver(cap);
 		}
 		else if(System.getProperty("os.name").contains("Linux")){

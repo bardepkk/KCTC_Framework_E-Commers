@@ -21,7 +21,6 @@ import com.uiFramework.KTCTC.common.CommonMethods;
 import com.uiFramework.KTCTC.helper.browserConfiguration.ChromeBrowser;
 import com.uiFramework.KTCTC.helper.getScreenShot.CaptureScreen;
 import com.uiFramework.KTCTC.helper.property.PropertyFileHelper;
-import com.uiFramework.KTCTC.helper.resource.ResourceHelper;
 import com.uiFramework.KTCTC.utils.ExtentManager;
 
 public class TestBase {
@@ -51,7 +50,7 @@ public class TestBase {
 	
 	@BeforeMethod
 	public void beforeMethod(Method method){
-		test.log(Status.INFO, method.getName()+"**************test started***************");
+		test.log(Status.INFO, method.getName()+" **************test started***************");
 		
 	}
 	
@@ -73,7 +72,7 @@ public class TestBase {
 			test.log(Status.SKIP, result.getName()+" is skipped");
 			
 		}
-		test.log(Status.INFO,result.getName()+"**************test Finished***************");
+		test.log(Status.INFO,result.getName()+" **************test Finished***************");
 		
 		
 	}
@@ -81,7 +80,7 @@ public class TestBase {
 	@AfterClass
 	public void afterClass(){
 		
-		//	driver.quit();
+		driver.quit();
 		
 	}
 	@AfterSuite

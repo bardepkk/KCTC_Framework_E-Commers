@@ -91,6 +91,7 @@ public class CommonMethods {
     }
 	
 	/**
+	 * This method logins to the application
 	 * @param driver
 	 * @param number
 	 * @param pass
@@ -101,18 +102,18 @@ public class CommonMethods {
 		driver.findElement(By.id("myInput")).sendKeys(pass);
 		driver.findElement(By.name("login")).click();
 	}
+	
 	/**
-	 * Method navigates to required page
+	 * This method expands inventory option
+	 * 
 	 * @param driver
-	 * @param pageName
 	 */
-	public void navigateToReQuiredPage(WebDriver driver, String pageName )
+	public void expandInventoryOption(WebDriver driver)
 	{
-		
-		JavaScriptHelper js = new JavaScriptHelper(driver);
-		js.clickElement(driver.findElement(By.xpath("//*[@class='card-body']//*[contains(text(),'"+pageName+"')]")));
+		driver.findElement(By.xpath("//*[contains(text(),'Inventory')]")).click();
 		
 	}
+	
 	
 	
 	

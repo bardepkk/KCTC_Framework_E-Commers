@@ -8,10 +8,9 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
-import com.uiFramework.KTCTC.helper.resource.ResourceHelper;
 
 public class CaptureScreen {
-	public static File reportDirectery= new File(ResourceHelper.getResourcePath("src/main/resources/screenShots"));
+	public static File reportDirectery= new File(System.getProperty("user.dir")+"\\src\\main\\resources\\screenShots");
 	
 	public String getScreenShot(String fileName, WebDriver driver){
 		/*
@@ -26,7 +25,7 @@ public class CaptureScreen {
 		SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 		File screFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try{
-			destFile = new File(reportDirectery+"/"+fileName+"_"+formater.format(calendar.getTime())+".png");
+			destFile = new File(reportDirectery+"\\"+fileName+"_"+formater.format(calendar.getTime())+".png");
 			Files.copy(screFile.toPath(), destFile.toPath());
 		}
 		catch(Exception e){

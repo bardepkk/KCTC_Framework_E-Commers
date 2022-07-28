@@ -7,8 +7,6 @@ import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.internal.ElementScrollBehavior;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import com.uiFramework.KTCTC.helper.resource.ResourceHelper;
-
 
 public class IExploreBrowser {
 	
@@ -28,7 +26,7 @@ public class IExploreBrowser {
 	}
 	
 	public WebDriver getIExplorerDriver(InternetExplorerOptions cap) {
-		System.setProperty("webdriver.ie.driver", ResourceHelper.getResourcePath("/src/main/resources/drivers/chromedriver"));
+		System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/IEdriver");
 		return new InternetExplorerDriver(cap);
 	}
 

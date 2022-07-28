@@ -2,6 +2,7 @@ package com.uiFramework.KTCTC.helper.alert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class AlertHelper {
@@ -13,6 +14,7 @@ public class AlertHelper {
 		this.driver = driver;
 		
 	}
+	
 	
 	public Alert getAlert(){
 		

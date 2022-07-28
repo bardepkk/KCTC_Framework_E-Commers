@@ -4,7 +4,6 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.uiFramework.KTCTC.helper.resource.ResourceHelper;
 
 public class ExtentManager {
 	
@@ -12,7 +11,7 @@ public class ExtentManager {
 	
 	public static ExtentReports getInstance(){
 		if(extent == null){
-			String location = ResourceHelper.getResourcePath("src/main/resources/reports/extent.html");
+			String location = System.getProperty("user.dir")+"\\src\\main\\resources\\reports\\extent.html";
 			return createInstance(location);
 		}
 		else{
