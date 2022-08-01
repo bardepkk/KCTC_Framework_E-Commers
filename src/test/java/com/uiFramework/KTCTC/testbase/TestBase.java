@@ -39,7 +39,7 @@ public class TestBase {
 	@BeforeClass
 	public void beforeClassOfA() {
 		driver = ChromeBrowser.getBrowserInstance();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		//driver.manage().window().maximize();
 		test = extent.createTest(getClass().getSimpleName());

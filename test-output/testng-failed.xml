@@ -3,18 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="regression.LoginFunctionality">
+      <class name="regression.InventoryCategoryTest">
         <methods>
+          <include name="verifyCategoryPageCountWillGetDecreasedAfterDelete"/>
           <include name="afterMethod"/>
-          <include name="verifyUsercanInventory"/>
           <include name="beforeSuite"/>
           <include name="beforeClassOfA"/>
           <include name="afterClass"/>
+          <include name="verifyCategoryDeletedSuccessMessageIsDisplayed"/>
           <include name="afterSuiteMethod"/>
           <include name="beforeMethod"/>
-          <include name="verifyUsercanAddBrand"/>
+          <include name="verifyUserCanDeleteExistingCategory"/>
         </methods>
-      </class> <!-- regression.LoginFunctionality -->
+      </class> <!-- regression.InventoryCategoryTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
