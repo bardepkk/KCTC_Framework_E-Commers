@@ -30,24 +30,12 @@ public class TestBase {
 	public WebDriver driver;
 	public CommonMethods cmObj = new CommonMethods();
 	CaptureScreen screenObj = new CaptureScreen();
-	PropertyFileHelper proObj = new PropertyFileHelper("env.properties");
+	public PropertyFileHelper proObj = new PropertyFileHelper("env.properties");
 	@BeforeSuite
 	public void beforeSuite() throws Exception{
 		extent = ExtentManager.getInstance();
 	}
-	
-	@BeforeClass
-	public void beforeClassOfA() {
-		driver = ChromeBrowser.getBrowserInstance();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.manage().deleteAllCookies();
-		//driver.manage().window().maximize();
-		test = extent.createTest(getClass().getSimpleName());
-		driver.get(proObj.getPropertyValueFromFile("baseURL"));
-		cmObj.loginToApplication(driver, proObj.getPropertyValueFromFile("adminNumber"),proObj.getPropertyValueFromFile("adminPass"));
-	}
-	
-	
+		
 	@BeforeMethod
 	public void beforeMethod(Method method){
 		test.log(Status.INFO, method.getName()+" **************test started***************");

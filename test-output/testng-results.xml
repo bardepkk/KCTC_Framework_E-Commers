@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="9" passed="6">
+<testng-results skipped="0" failed="1" ignored="0" total="9" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42986" started-at="2022-08-01T22:39:42 IST" finished-at="2022-08-01T22:40:25 IST">
+  <suite name="Default suite" duration-ms="31264" started-at="2022-08-02T20:00:31 IST" finished-at="2022-08-02T20:01:02 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42986" started-at="2022-08-01T22:39:42 IST" finished-at="2022-08-01T22:40:25 IST">
+    <test name="Default test" duration-ms="31264" started-at="2022-08-02T20:00:31 IST" finished-at="2022-08-02T20:01:02 IST">
       <class name="regression.InventoryCategoryTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeSuite" is-config="true" duration-ms="153" started-at="2022-08-01T22:39:42 IST" finished-at="2022-08-01T22:39:42 IST">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeSuite" is-config="true" duration-ms="149" started-at="2022-08-02T20:00:30 IST" finished-at="2022-08-02T20:00:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeClassOfA()[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeClassOfA" is-config="true" duration-ms="9332" started-at="2022-08-01T22:39:42 IST" finished-at="2022-08-01T22:39:52 IST">
+        <test-method status="PASS" signature="beforeClassOfA()[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeClassOfA" is-config="true" duration-ms="6828" started-at="2022-08-02T20:00:31 IST" finished-at="2022-08-02T20:00:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassOfA -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeMethod" is-config="true" duration-ms="24" started-at="2022-08-01T22:39:52 IST" finished-at="2022-08-01T22:39:52 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeMethod" is-config="true" duration-ms="6" started-at="2022-08-02T20:00:37 IST" finished-at="2022-08-02T20:00:37 IST">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyUserCanAddNewCategory()[pri:1, instance:regression.InventoryCategoryTest@528931cf]" name="verifyUserCanAddNewCategory" duration-ms="6297" started-at="2022-08-01T22:39:52 IST" finished-at="2022-08-01T22:39:58 IST">
+        <test-method status="PASS" signature="verifyUserCanAddNewCategory()[pri:1, instance:regression.InventoryCategoryTest@528931cf]" name="verifyUserCanAddNewCategory" duration-ms="5159" started-at="2022-08-02T20:00:37 IST" finished-at="2022-08-02T20:00:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanAddNewCategory -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-08-01T22:39:58 IST" finished-at="2022-08-01T22:39:58 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-08-02T20:00:43 IST" finished-at="2022-08-02T20:00:43 IST">
           <params>
             <param index="0">
               <value>
@@ -41,7 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-08-01T22:39:58 IST" finished-at="2022-08-01T22:39:58 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-08-02T20:00:43 IST" finished-at="2022-08-02T20:00:43 IST">
           <params>
             <param index="0">
               <value>
@@ -52,26 +52,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyCategoryAddedSuccessMessageIsDisplayed()[pri:2, instance:regression.InventoryCategoryTest@528931cf]" name="verifyCategoryAddedSuccessMessageIsDisplayed" duration-ms="52" started-at="2022-08-01T22:39:58 IST" finished-at="2022-08-01T22:39:58 IST">
+        <test-method status="PASS" signature="verifyCategoryAddedSuccessMessageIsDisplayed()[pri:2, instance:regression.InventoryCategoryTest@528931cf]" name="verifyCategoryAddedSuccessMessageIsDisplayed" duration-ms="57" started-at="2022-08-02T20:00:43 IST" finished-at="2022-08-02T20:00:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCategoryAddedSuccessMessageIsDisplayed -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-08-01T22:39:58 IST" finished-at="2022-08-01T22:39:58 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyCategoryAddedSuccessMessageIsDisplayed status=SUCCESS method=InventoryCategoryTest.verifyCategoryAddedSuccessMessageIsDisplayed()[pri:2, instance:regression.InventoryCategoryTest@528931cf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="verifyCategoryPageCountGetsIncreasedOnAddingNewCategory()[pri:3, instance:regression.InventoryCategoryTest@528931cf]" name="verifyCategoryPageCountGetsIncreasedOnAddingNewCategory" duration-ms="3344" started-at="2022-08-01T22:39:58 IST" finished-at="2022-08-01T22:40:02 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCategoryPageCountGetsIncreasedOnAddingNewCategory -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-08-01T22:39:58 IST" finished-at="2022-08-01T22:39:58 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2022-08-02T20:00:43 IST" finished-at="2022-08-02T20:00:43 IST">
           <params>
             <param index="0">
               <value>
@@ -82,7 +67,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-08-01T22:40:02 IST" finished-at="2022-08-01T22:40:02 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-08-02T20:00:43 IST" finished-at="2022-08-02T20:00:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCategoryAddedSuccessMessageIsDisplayed status=SUCCESS method=InventoryCategoryTest.verifyCategoryAddedSuccessMessageIsDisplayed()[pri:2, instance:regression.InventoryCategoryTest@528931cf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="verifyCategoryPageCountGetsIncreasedOnAddingNewCategory()[pri:3, instance:regression.InventoryCategoryTest@528931cf]" name="verifyCategoryPageCountGetsIncreasedOnAddingNewCategory" duration-ms="3240" started-at="2022-08-02T20:00:43 IST" finished-at="2022-08-02T20:00:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoryPageCountGetsIncreasedOnAddingNewCategory -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-08-02T20:00:46 IST" finished-at="2022-08-02T20:00:46 IST">
           <params>
             <param index="0">
               <value>
@@ -93,7 +93,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-08-01T22:40:02 IST" finished-at="2022-08-01T22:40:02 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2022-08-02T20:00:46 IST" finished-at="2022-08-02T20:00:46 IST">
           <params>
             <param index="0">
               <value>
@@ -104,26 +104,68 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyUserCanEditExistingCategory()[pri:4, instance:regression.InventoryCategoryTest@528931cf]" name="verifyUserCanEditExistingCategory" duration-ms="8261" started-at="2022-08-01T22:40:02 IST" finished-at="2022-08-01T22:40:10 IST">
+        <test-method status="FAIL" signature="verifyUserCanEditExistingCategory()[pri:4, instance:regression.InventoryCategoryTest@528931cf]" name="verifyUserCanEditExistingCategory" duration-ms="1729" started-at="2022-08-02T20:00:46 IST" finished-at="2022-08-02T20:00:48 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Old category is still displayed on UI expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Old category is still displayed on UI expected [false] but found [true]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at regression.InventoryCategoryTest.verifyUserCanEditExistingCategory(InventoryCategoryTest.java:56)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanEditExistingCategory -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-08-01T22:40:10 IST" finished-at="2022-08-01T22:40:10 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterMethod" is-config="true" duration-ms="261" started-at="2022-08-02T20:00:48 IST" finished-at="2022-08-02T20:00:48 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserCanEditExistingCategory status=SUCCESS method=InventoryCategoryTest.verifyUserCanEditExistingCategory()[pri:4, instance:regression.InventoryCategoryTest@528931cf] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserCanEditExistingCategory status=FAILURE method=InventoryCategoryTest.verifyUserCanEditExistingCategory()[pri:4, instance:regression.InventoryCategoryTest@528931cf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="verifyCategoryUpdatedSuccessMessageIsDisplayed()[pri:5, instance:regression.InventoryCategoryTest@528931cf]" name="verifyCategoryUpdatedSuccessMessageIsDisplayed" duration-ms="152" started-at="2022-08-01T22:40:10 IST" finished-at="2022-08-01T22:40:10 IST">
+        <test-method status="PASS" signature="verifyCategoryUpdatedSuccessMessageIsDisplayed()[pri:5, instance:regression.InventoryCategoryTest@528931cf]" name="verifyCategoryUpdatedSuccessMessageIsDisplayed" duration-ms="56" started-at="2022-08-02T20:00:48 IST" finished-at="2022-08-02T20:00:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCategoryUpdatedSuccessMessageIsDisplayed -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-08-01T22:40:10 IST" finished-at="2022-08-01T22:40:10 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-08-02T20:00:48 IST" finished-at="2022-08-02T20:00:48 IST">
           <params>
             <param index="0">
               <value>
@@ -134,7 +176,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-08-01T22:40:10 IST" finished-at="2022-08-01T22:40:10 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-08-02T20:00:48 IST" finished-at="2022-08-02T20:00:48 IST">
           <params>
             <param index="0">
               <value>
@@ -145,7 +187,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-08-01T22:40:10 IST" finished-at="2022-08-01T22:40:10 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-08-02T20:00:48 IST" finished-at="2022-08-02T20:00:48 IST">
           <params>
             <param index="0">
               <value>
@@ -156,11 +198,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyCategoryPageCountWillBeSameAfterEdit()[pri:6, instance:regression.InventoryCategoryTest@528931cf]" name="verifyCategoryPageCountWillBeSameAfterEdit" duration-ms="3534" started-at="2022-08-01T22:40:10 IST" finished-at="2022-08-01T22:40:13 IST">
+        <test-method status="PASS" signature="verifyCategoryPageCountWillBeSameAfterEdit()[pri:6, instance:regression.InventoryCategoryTest@528931cf]" name="verifyCategoryPageCountWillBeSameAfterEdit" duration-ms="3262" started-at="2022-08-02T20:00:48 IST" finished-at="2022-08-02T20:00:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCategoryPageCountWillBeSameAfterEdit -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-08-01T22:40:13 IST" finished-at="2022-08-01T22:40:13 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-08-02T20:00:51 IST" finished-at="2022-08-02T20:00:51 IST">
           <params>
             <param index="0">
               <value>
@@ -171,7 +213,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2022-08-01T22:40:13 IST" finished-at="2022-08-01T22:40:13 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-08-02T20:00:51 IST" finished-at="2022-08-02T20:00:51 IST">
           <params>
             <param index="0">
               <value>
@@ -182,64 +224,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="verifyUserCanDeleteExistingCategory()[pri:7, instance:regression.InventoryCategoryTest@528931cf]" name="verifyUserCanDeleteExistingCategory" duration-ms="1253" started-at="2022-08-01T22:40:13 IST" finished-at="2022-08-01T22:40:15 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Deleted category is still displayed on UI expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Deleted category is still displayed on UI expected [false] but found [true]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at regression.InventoryCategoryTest.verifyUserCanDeleteExistingCategory(InventoryCategoryTest.java:84)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="verifyUserCanDeleteExistingCategory()[pri:7, instance:regression.InventoryCategoryTest@528931cf]" name="verifyUserCanDeleteExistingCategory" duration-ms="6354" started-at="2022-08-02T20:00:51 IST" finished-at="2022-08-02T20:00:58 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanDeleteExistingCategory -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterMethod" is-config="true" duration-ms="381" started-at="2022-08-01T22:40:15 IST" finished-at="2022-08-01T22:40:15 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-08-02T20:00:58 IST" finished-at="2022-08-02T20:00:58 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserCanDeleteExistingCategory status=FAILURE method=InventoryCategoryTest.verifyUserCanDeleteExistingCategory()[pri:7, instance:regression.InventoryCategoryTest@528931cf] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserCanDeleteExistingCategory status=SUCCESS method=InventoryCategoryTest.verifyUserCanDeleteExistingCategory()[pri:7, instance:regression.InventoryCategoryTest@528931cf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-08-01T22:40:15 IST" finished-at="2022-08-01T22:40:15 IST">
+        <test-method status="PASS" signature="verifyCategoryDeletedSuccessMessageIsDisplayed()[pri:8, instance:regression.InventoryCategoryTest@528931cf]" name="verifyCategoryDeletedSuccessMessageIsDisplayed" duration-ms="43" started-at="2022-08-02T20:00:58 IST" finished-at="2022-08-02T20:00:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoryDeletedSuccessMessageIsDisplayed -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-08-02T20:00:58 IST" finished-at="2022-08-02T20:00:58 IST">
           <params>
             <param index="0">
               <value>
@@ -250,64 +254,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="verifyCategoryDeletedSuccessMessageIsDisplayed()[pri:8, instance:regression.InventoryCategoryTest@528931cf]" name="verifyCategoryDeletedSuccessMessageIsDisplayed" duration-ms="5080" started-at="2022-08-01T22:40:15 IST" finished-at="2022-08-01T22:40:20 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Category deleted message is not displayed expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Category deleted message is not displayed expected [true] but found [false]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at regression.InventoryCategoryTest.verifyCategoryDeletedSuccessMessageIsDisplayed(InventoryCategoryTest.java:92)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCategoryDeletedSuccessMessageIsDisplayed -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterMethod" is-config="true" duration-ms="330" started-at="2022-08-01T22:40:20 IST" finished-at="2022-08-01T22:40:21 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-08-02T20:00:58 IST" finished-at="2022-08-02T20:00:58 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyCategoryDeletedSuccessMessageIsDisplayed status=FAILURE method=InventoryCategoryTest.verifyCategoryDeletedSuccessMessageIsDisplayed()[pri:8, instance:regression.InventoryCategoryTest@528931cf] output={null}]]]>
+                <![CDATA[[TestResult name=verifyCategoryDeletedSuccessMessageIsDisplayed status=SUCCESS method=InventoryCategoryTest.verifyCategoryDeletedSuccessMessageIsDisplayed()[pri:8, instance:regression.InventoryCategoryTest@528931cf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-08-01T22:40:21 IST" finished-at="2022-08-01T22:40:21 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-08-02T20:00:58 IST" finished-at="2022-08-02T20:00:58 IST">
           <params>
             <param index="0">
               <value>
@@ -318,68 +276,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="verifyCategoryPageCountWillGetDecreasedAfterDelete()[pri:9, instance:regression.InventoryCategoryTest@528931cf]" name="verifyCategoryPageCountWillGetDecreasedAfterDelete" duration-ms="3482" started-at="2022-08-01T22:40:21 IST" finished-at="2022-08-01T22:40:24 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [12] but found [13]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [12] but found [13]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at regression.InventoryCategoryTest.verifyCategoryPageCountWillGetDecreasedAfterDelete(InventoryCategoryTest.java:101)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="verifyCategoryPageCountWillGetDecreasedAfterDelete()[pri:9, instance:regression.InventoryCategoryTest@528931cf]" name="verifyCategoryPageCountWillGetDecreasedAfterDelete" duration-ms="3481" started-at="2022-08-02T20:00:58 IST" finished-at="2022-08-02T20:01:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCategoryPageCountWillGetDecreasedAfterDelete -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterMethod" is-config="true" duration-ms="264" started-at="2022-08-01T22:40:24 IST" finished-at="2022-08-01T22:40:24 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterMethod" is-config="true" duration-ms="2" started-at="2022-08-02T20:01:01 IST" finished-at="2022-08-02T20:01:01 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyCategoryPageCountWillGetDecreasedAfterDelete status=FAILURE method=InventoryCategoryTest.verifyCategoryPageCountWillGetDecreasedAfterDelete()[pri:9, instance:regression.InventoryCategoryTest@528931cf] output={null}]]]>
+                <![CDATA[[TestResult name=verifyCategoryPageCountWillGetDecreasedAfterDelete status=SUCCESS method=InventoryCategoryTest.verifyCategoryPageCountWillGetDecreasedAfterDelete()[pri:9, instance:regression.InventoryCategoryTest@528931cf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterClass" is-config="true" duration-ms="1113" started-at="2022-08-01T22:40:24 IST" finished-at="2022-08-01T22:40:25 IST">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterClass" is-config="true" duration-ms="722" started-at="2022-08-02T20:01:01 IST" finished-at="2022-08-02T20:01:02 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterSuiteMethod()[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterSuiteMethod" is-config="true" duration-ms="508" started-at="2022-08-01T22:40:25 IST" finished-at="2022-08-01T22:40:26 IST">
+        <test-method status="PASS" signature="afterSuiteMethod()[pri:0, instance:regression.InventoryCategoryTest@528931cf]" name="afterSuiteMethod" is-config="true" duration-ms="525" started-at="2022-08-02T20:01:02 IST" finished-at="2022-08-02T20:01:02 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuiteMethod -->

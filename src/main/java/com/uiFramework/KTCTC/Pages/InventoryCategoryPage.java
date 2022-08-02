@@ -7,7 +7,13 @@ import org.openqa.selenium.WebDriver;
 import com.uiFramework.KTCTC.helper.javaScript.JavaScriptHelper;
 import com.uiFramework.KTCTC.helper.wait.WaitHelper;
 
+
+/**
+ * @author 91992
+ *
+ */
 public class InventoryCategoryPage {
+	WebDriver driver=null;
 	// Locators on category Page
 	By newButtonOnCategoryPage = By.xpath("//*[contains(@href,'addnew')]");
 	By searchBoxOnCategoryPage = By.xpath("//*[contains(@type,'search')]");
@@ -28,14 +34,26 @@ public class InventoryCategoryPage {
 	By categoryupdatedSuccessfullyMessage = By.xpath("//section//*[contains(.,'Category updated successfully')]");
 	By categorydeletedSuccessfullyMessage = By.xpath("//section//*[contains(.,'Category deleted successfully')]");
 	
-	public void expandCategoruOption(WebDriver driver)
+	public InventoryCategoryPage(WebDriver driver)
+	{
+		this.driver = driver;
+	}
+	
+	/**
+	 * This method expands Category option
+	 */
+	public void expandCategoruOption()
 	{
 		//WaitHelper wt = new WaitHelper(driver);
 	//	wt.WaitForElementClickable(driver.findElement(categoryOptionFromInventory), 4);
 		driver.findElement(categoryOptionFromInventory).click();
 	}
 	
-	public boolean isCategoryAddedSuccessMessageDisplayed(WebDriver driver)
+	/**
+	 * This method checks if category added success message displayed
+	 * @return
+	 */
+	public boolean isCategoryAddedSuccessMessageDisplayed()
 	{
 		boolean flag = false;
 		
@@ -48,7 +66,11 @@ public class InventoryCategoryPage {
 		return flag;
 		
 	}
-	public boolean isCategoryUpdatedSuccessMessageDisplayed(WebDriver driver)
+	/**
+	 * This method checks if category updated success message displayed
+	 * @return
+	 */
+	public boolean isCategoryUpdatedSuccessMessageDisplayed()
 	{
 		boolean flag = false;
 		
@@ -61,7 +83,11 @@ public class InventoryCategoryPage {
 		return flag;
 		
 	}
-	public boolean isCategoryDeletedSuccessMessageDisplayed(WebDriver driver)
+	/**
+	 * This method checks if category deleted success message displayed
+	 * @return
+	 */
+	public boolean isCategoryDeletedSuccessMessageDisplayed()
 	{
 		boolean flag = false;
 		
@@ -74,7 +100,11 @@ public class InventoryCategoryPage {
 		return flag;
 		
 	}
-	public void addNewCategory(WebDriver driver, String name)
+	/**
+	 * This method adds new category in application
+	 * @param name
+	 */
+	public void addNewCategory(String name)
 	{
 		driver.findElement(newButtonOnCategoryPage).click();
 		driver.findElement(nameTextBoxOnAddNewCategoryModal).sendKeys(name);
@@ -82,20 +112,33 @@ public class InventoryCategoryPage {
 		
 	}
 	
-	public void searchStringInSearchBox(WebDriver driver, String str)
+	/**
+	 * This method search provided string in search box
+	 * @param str
+	 */
+	public void searchStringInSearchBox( String str)
 	{
 		clearSearchBox(driver);
 		driver.findElement(searchBoxOnCategoryPage).sendKeys(str);
 	}
+	/**
+	 * This method clears search box 
+	 * @param driver
+	 */
 	public void clearSearchBox(WebDriver driver)
 	{
 		driver.findElement(searchBoxOnCategoryPage).clear();
 		driver.findElement(searchBoxOnCategoryPage).sendKeys(Keys.BACK_SPACE);
 	}
 	
-	public void editExistingCategory(WebDriver driver, String oldCategory, String newCatString)
+	/**
+	 * This method edits/update existing category 
+	 * @param oldCategory
+	 * @param newCatString
+	 */
+	public void editExistingCategory(String oldCategory, String newCatString)
 	{
-		searchStringInSearchBox(driver, oldCategory);
+		searchStringInSearchBox(oldCategory);
 		driver.findElement(editButtonOnCategoryPage).click();
 		driver.findElement(nameTextBoxOnEditCategoryModal).clear();
 		driver.findElement(nameTextBoxOnEditCategoryModal).sendKeys(newCatString);
@@ -103,18 +146,27 @@ public class InventoryCategoryPage {
 		
 	}
 	
-	public void deleteExistingCategory(WebDriver driver, String category)
+	/**
+	 * This method deletes existing category
+	 * @param category
+	 */
+	public void deleteExistingCategory( String category)
 	{
-		searchStringInSearchBox(driver, category);
+		searchStringInSearchBox(category);
 		driver.findElement(deleteButtonOnCategoryPage).click();
 		driver.findElement(deleteButtonOnDelteModal).click();
 		
 		
 	}
 	
-public boolean isCategoryDIsplayedOnCategoryPage(WebDriver driver, String category)
+/**
+ * This method checks if provided category is displayed on UI
+ * @param category
+ * @return
+ */
+public boolean isCategoryDIsplayedOnCategoryPage(String category)
 {
-	searchStringInSearchBox(driver, category);
+	searchStringInSearchBox(category);
 	boolean flag = false;
 	
 	try {
@@ -126,7 +178,11 @@ public boolean isCategoryDIsplayedOnCategoryPage(WebDriver driver, String catego
 	return flag;
 }
 
-public int getCountOfRecordsOnCategoryPage(WebDriver driver)
+/**
+ * This method returns count of records displayed on category page
+ * @return
+ */
+public int getCountOfRecordsOnCategoryPage()
 {
 	JavaScriptHelper js = new JavaScriptHelper(driver);
 	js.scrollToElement(driver.findElement(categoryCountMessageOnCategoryPage));
