@@ -1,21 +1,16 @@
-package smoke;
+package regression;
 
 import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import com.uiFramework.KTCTC.Pages.InventoryCategoryPage;
 import com.uiFramework.KTCTC.helper.browserConfiguration.ChromeBrowser;
 import com.uiFramework.KTCTC.testbase.TestBase;
 
-public class InventoryCategorySmokeTest extends TestBase{
-	InventoryCategoryPage inventoryCategoryPage = null;
-	String categoryName = "";
-	String newCategoryName = "";
-	int initialCount = 0;
-	int afterAddCount = 0;
+public class InventoryProduct extends TestBase{
+	String categoryName = cmObj.getcharacterString(6);
 	@BeforeClass
 	public void beforeClassOfA() {
 		driver = ChromeBrowser.getBrowserInstance();
@@ -25,20 +20,16 @@ public class InventoryCategorySmokeTest extends TestBase{
 		test = extent.createTest(getClass().getSimpleName());
 		driver.get(proObj.getPropertyValueFromFile("baseURL"));
 		cmObj.loginToApplication(driver, proObj.getPropertyValueFromFile("adminNumber"),proObj.getPropertyValueFromFile("adminPass"));
-	}
-	
-	@Test (priority = 1)
-	public void verifyUserCanAddNewCategory()
-	{
-		inventoryCategoryPage = new InventoryCategoryPage(driver);
-		SoftAssert sAssert = new SoftAssert();
-		cmObj.expandInventoryOption(driver);	    
+		InventoryCategoryPage inventoryCategoryPage = new InventoryCategoryPage(driver);
+		cmObj.expandInventoryOption(driver);
 		inventoryCategoryPage.expandCategoruOption();
-		initialCount = inventoryCategoryPage.getCountOfRecordsOnCategoryPage();
-		 categoryName = cmObj.getcharacterString(6);
 		inventoryCategoryPage.addNewCategory(categoryName);
-		boolean flag = inventoryCategoryPage.isCategoryDIsplayedOnCategoryPage(categoryName);
-		sAssert.assertTrue(flag, "Newly Added category is not displayed on UI");
-		sAssert.assertAll();
+		
 	}
+	@Test
+	public void verifyUserCanAddProduct()
+	{
+		
+	}
+
 }

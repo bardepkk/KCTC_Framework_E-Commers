@@ -4,9 +4,8 @@
   <test thread-count="5" name="regression">
     <classes>
       <class name="regression.InventoryCategoryTest"/>
-      <class name="smoke.InventoryCategorySmokeTest"/>
-      <class name="regression.LoginFunctionality"/>
-      <class name="regression.InventoryProductTest"/>
+      <class name="regression.LoginFunctionalityTest"/>
+      <class name="regression.InventoryProduct"/>
     </classes>
   </test> <!-- regression -->
 </suite> <!-- KTCTC -->

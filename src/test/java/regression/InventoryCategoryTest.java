@@ -55,8 +55,7 @@ public class InventoryCategoryTest extends TestBase{
 		SoftAssert sAssert = new SoftAssert();
 		inventoryCategoryPage.clearSearchBox(driver);
 		 afterAddCount = inventoryCategoryPage.getCountOfRecordsOnCategoryPage();
-		sAssert.assertEquals((initialCount+1), afterAddCount);
-		
+		sAssert.assertEquals((initialCount+1), afterAddCount);		
 		sAssert.assertAll();
 	}
 	@Test (priority = 4)

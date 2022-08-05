@@ -8,52 +8,39 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">31,264</td><td></td><td></td></tr>
+<tr><th colspan="8">KTCTC</th></tr>
+<tr><td><a href="#t0">regression</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">48,043</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">regression.InventoryCategoryTest</td><td><a href="#m0">verifyUserCanEditExistingCategory</a></td><td rowspan="1">1659450646444</td><td rowspan="1">1729</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">regression.InventoryCategoryTest</td><td><a href="#m1">verifyCategoryAddedSuccessMessageIsDisplayed</a></td><td rowspan="1">1659450643139</td><td rowspan="1">57</td></tr><tr class="passedeven"><td><a href="#m2">verifyCategoryDeletedSuccessMessageIsDisplayed</a></td><td rowspan="1">1659450658118</td><td rowspan="1">43</td></tr><tr class="passedeven"><td><a href="#m3">verifyCategoryPageCountGetsIncreasedOnAddingNewCategory</a></td><td rowspan="1">1659450643200</td><td rowspan="1">3240</td></tr><tr class="passedeven"><td><a href="#m4">verifyCategoryPageCountWillBeSameAfterEdit</a></td><td rowspan="1">1659450648497</td><td rowspan="1">3262</td></tr><tr class="passedeven"><td><a href="#m5">verifyCategoryPageCountWillGetDecreasedAfterDelete</a></td><td rowspan="1">1659450658164</td><td rowspan="1">3481</td></tr><tr class="passedeven"><td><a href="#m6">verifyCategoryUpdatedSuccessMessageIsDisplayed</a></td><td rowspan="1">1659450648438</td><td rowspan="1">56</td></tr><tr class="passedeven"><td><a href="#m7">verifyUserCanAddNewCategory</a></td><td rowspan="1">1659450637973</td><td rowspan="1">5159</td></tr><tr class="passedeven"><td><a href="#m8">verifyUserCanDeleteExistingCategory</a></td><td rowspan="1">1659450651762</td><td rowspan="1">6354</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">KTCTC</th></tr></tbody><tbody id="t0"><tr><th colspan="4">regression &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">regression.LoginFunctionalityTest</td><td><a href="#m0">afterClass</a></td><td rowspan="1">1659715533293</td><td rowspan="1">1</td></tr><tr><th colspan="4">regression &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">regression.InventoryCategoryTest</td><td><a href="#m1">verifyCategoryDeletedSuccessMessageIsDisplayed</a></td><td rowspan="1">1659715522923</td><td rowspan="1">5076</td></tr><tr class="failedeven"><td><a href="#m2">verifyCategoryPageCountWillGetDecreasedAfterDelete</a></td><td rowspan="1">1659715528357</td><td rowspan="1">3608</td></tr><tr class="failedeven"><td><a href="#m3">verifyUserCanDeleteExistingCategory</a></td><td rowspan="1">1659715521286</td><td rowspan="1">1271</td></tr><tr><th colspan="4">regression &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">regression.InventoryCategoryTest</td><td><a href="#m4">verifyCategoryAddedSuccessMessageIsDisplayed</a></td><td rowspan="1">1659715506929</td><td rowspan="1">65</td></tr><tr class="passedeven"><td><a href="#m5">verifyCategoryPageCountGetsIncreasedOnAddingNewCategory</a></td><td rowspan="1">1659715506998</td><td rowspan="1">3315</td></tr><tr class="passedeven"><td><a href="#m6">verifyCategoryPageCountWillBeSameAfterEdit</a></td><td rowspan="1">1659715517800</td><td rowspan="1">3483</td></tr><tr class="passedeven"><td><a href="#m7">verifyCategoryUpdatedSuccessMessageIsDisplayed</a></td><td rowspan="1">1659715517696</td><td rowspan="1">101</td></tr><tr class="passedeven"><td><a href="#m8">verifyUserCanAddNewCategory</a></td><td rowspan="1">1659715500479</td><td rowspan="1">6439</td></tr><tr class="passedeven"><td><a href="#m9">verifyUserCanEditExistingCategory</a></td><td rowspan="1">1659715510315</td><td rowspan="1">7377</td></tr><tr class="passedodd"><td rowspan="1">regression.InventoryProduct</td><td><a href="#m10">verifyUserCanAddProduct</a></td><td rowspan="1">1659715540949</td><td rowspan="1">1</td></tr><tr class="passedeven"><td rowspan="3">regression.LoginFunctionalityTest</td><td><a href="#m11">verifyUsercanAddBrand</a></td><td rowspan="1">1659715533283</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m12">verifyUsercanInventory</a></td><td rowspan="1">1659715533289</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m13">verifyUsercanLogin</a></td><td rowspan="1">1659715533277</td><td rowspan="1">1</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">regression.InventoryCategoryTest#verifyUserCanEditExistingCategory</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
-	Old category is still displayed on UI expected [false] but found [true]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at regression.InventoryCategoryTest.verifyUserCanEditExistingCategory(InventoryCategoryTest.java:56)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<h2>regression</h2><h3 id="m0">regression.LoginFunctionalityTest#afterClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.uiFramework.KTCTC.testbase.TestBase.afterClass(TestBase.java:71)
 	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">regression.InventoryCategoryTest#verifyCategoryAddedSuccessMessageIsDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">regression.InventoryCategoryTest#verifyCategoryDeletedSuccessMessageIsDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">regression.InventoryCategoryTest#verifyCategoryPageCountGetsIncreasedOnAddingNewCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">regression.InventoryCategoryTest#verifyCategoryPageCountWillBeSameAfterEdit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">regression.InventoryCategoryTest#verifyCategoryPageCountWillGetDecreasedAfterDelete</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">regression.InventoryCategoryTest#verifyCategoryUpdatedSuccessMessageIsDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">regression.InventoryCategoryTest#verifyUserCanAddNewCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">regression.InventoryCategoryTest#verifyUserCanDeleteExistingCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">regression.InventoryCategoryTest#verifyCategoryDeletedSuccessMessageIsDisplayed</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Category deleted message is not displayed expected [true] but found [false]
+	at regression.InventoryCategoryTest.verifyCategoryDeletedSuccessMessageIsDisplayed(InventoryCategoryTest.java:107)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">regression.InventoryCategoryTest#verifyCategoryPageCountWillGetDecreasedAfterDelete</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [24] but found [25]
+	at regression.InventoryCategoryTest.verifyCategoryPageCountWillGetDecreasedAfterDelete(InventoryCategoryTest.java:116)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">regression.InventoryCategoryTest#verifyUserCanDeleteExistingCategory</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Deleted category is still displayed on UI expected [false] but found [true]
+	at regression.InventoryCategoryTest.verifyUserCanDeleteExistingCategory(InventoryCategoryTest.java:99)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">regression.InventoryCategoryTest#verifyCategoryAddedSuccessMessageIsDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">regression.InventoryCategoryTest#verifyCategoryPageCountGetsIncreasedOnAddingNewCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">regression.InventoryCategoryTest#verifyCategoryPageCountWillBeSameAfterEdit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">regression.InventoryCategoryTest#verifyCategoryUpdatedSuccessMessageIsDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">regression.InventoryCategoryTest#verifyUserCanAddNewCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">regression.InventoryCategoryTest#verifyUserCanEditExistingCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">regression.InventoryProduct#verifyUserCanAddProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">regression.LoginFunctionalityTest#verifyUsercanAddBrand</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">regression.LoginFunctionalityTest#verifyUsercanInventory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">regression.LoginFunctionalityTest#verifyUsercanLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
