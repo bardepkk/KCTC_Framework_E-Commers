@@ -19,7 +19,7 @@ public class ChromeBrowser {
 		//option.addArguments("--incognito");
 		//option.setBinary("/path/to/other/chrome/binary");
 		//option.addArguments("--headless");
-		
+		option.addArguments("--no-sandbox");
 		DesiredCapabilities chrome = DesiredCapabilities.chrome();
 		chrome.setJavascriptEnabled(true);			
 				

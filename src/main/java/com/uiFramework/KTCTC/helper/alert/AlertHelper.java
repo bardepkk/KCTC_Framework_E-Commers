@@ -3,12 +3,12 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 
 public class AlertHelper {
 
 	private WebDriver driver;
-	
 	
 	public AlertHelper(WebDriver driver){
 		this.driver = driver;

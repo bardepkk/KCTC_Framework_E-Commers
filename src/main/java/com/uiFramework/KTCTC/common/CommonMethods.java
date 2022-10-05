@@ -115,7 +115,21 @@ public class CommonMethods {
 	}
 	
 	
-	
+	public void acceptPrivateConnectionWarningIfPresent(WebDriver driver)
+	{
+		try {
+			boolean flag = driver.findElement(By.xpath("//*[@id='main-message']//*[contains(text(),'Your connection is not private')]")).isDisplayed();
+			if (flag)
+			{
+				driver.findElement(By.id("details-button")).click();
+				driver.findElement(By.partialLinkText("uat.ktctc.co.in (unsafe)")).click();
+			}
+		}
+		catch(Exception e)
+		{
+			
+		}
+	}
 	
 
 }

@@ -11,6 +11,7 @@
           <include name="beforeClassOfA"/>
           <include name="afterClass"/>
           <include name="verifyCategoryDeletedSuccessMessageIsDisplayed"/>
+          <include name="verifyUserCanEditExistingCategory"/>
           <include name="afterSuiteMethod"/>
           <include name="beforeMethod"/>
           <include name="verifyUserCanDeleteExistingCategory"/>

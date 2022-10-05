@@ -2,78 +2,125 @@ package com.uiFramework.KTCTC.helper.excel;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.util.Iterator;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
 
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelHelper {
+	private XSSFSheet sh;
 
-	public Object[][] getExcelData(String excelLocation, String sheetName) {
-
+	public ExcelHelper(String fileName, String sheetName) {
 		try {
-			Object dataSets[][] = null;
-			FileInputStream file = new FileInputStream(new File(excelLocation));
-			// Create Workbook instance
-			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			File f = new File(System.getProperty("user.dir") + "\\" + fileName);
+			FileInputStream fis = new FileInputStream(f);
 
-			// Get sheet Name from Workbook
-			XSSFSheet sheet = workbook.getSheet(sheetName);
+			XSSFWorkbook wb = new XSSFWorkbook(fis);
 
-			// count number of active rows in excel sheet
-			int totalRow = sheet.getLastRowNum();
-            System.out.println(totalRow);
-			// count active columns in row
-			int totalColumn = sheet.getRow(0).getLastCellNum();
-
-			dataSets = new Object[totalRow][totalColumn-1];
-
-			// Iterate Through each Rows one by one.
-			Iterator<Row> rowIterator = sheet.iterator();
-			int i = 0;
-			while (rowIterator.hasNext()) {
-				i++;
-				// for Every row , we need to iterator over columns
-				Row row = rowIterator.next();
-				Iterator<Cell> cellIterator = row.cellIterator();
-				int j = 0;
-				while (cellIterator.hasNext()) {
-					
-					Cell cell = cellIterator.next();
-					if (cell.getStringCellValue().contains("Start")) {
-						i = 0;
-						break;
-					}
-					switch (cell.getCellTypeEnum()) {
-					case STRING:
-						dataSets[i-1][j++] = cell.getStringCellValue();
-						break;
-					case NUMERIC:
-						dataSets[i-1][j++] = cell.getNumericCellValue();
-						break;
-					case BOOLEAN:
-						dataSets[i-1][j++] = cell.getBooleanCellValue();
-					case FORMULA:
-						dataSets[i-1][j++] = cell.getCellFormula();
-						break;
-
-					default:
-						System.out.println("no matching enum date type found");
-						break;
-					}
-				}
-			}
-			return dataSets;
+			sh = wb.getSheet(sheetName);
 		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return null;
+
 	}
-	
-		
-	
+
+	public ArrayList<String> getKeysList() {
+		ArrayList<String> keys = new ArrayList<>();
+
+		for (int i = 1; i <= sh.getLastRowNum(); i++) {
+			XSSFRow row = sh.getRow(i);
+			XSSFCell cel = row.getCell(0);
+			String keyy = getValueOfCellAccordingToCellType(cel);
+			cel = row.getCell(1);
+			keys.add(keyy);
+
+		}
+
+		return keys;
+	}
+
+	public ArrayList<String> getValuesList() {
+		ArrayList<String> values = new ArrayList<>();
+
+		for (int i = 1; i <= sh.getLastRowNum(); i++) {
+			XSSFRow row = sh.getRow(i);
+			XSSFCell cel = row.getCell(1);
+			String val = getValueOfCellAccordingToCellType(cel);
+			cel = row.getCell(1);
+			values.add(val);
+
+		}
+
+		return values;
+	}
+
+	public ArrayList<String> getColumnList(int columnNumber) {
+		ArrayList<String> values = new ArrayList<>();
+
+		for (int i = 1; i <= sh.getLastRowNum(); i++) {
+			XSSFRow row = sh.getRow(i);
+			XSSFCell cel = row.getCell(columnNumber);
+			String val = getValueOfCellAccordingToCellType(cel);
+			cel = row.getCell(1);
+			values.add(val);
+
+		}
+
+		return values;
+	}
+
+	public HashMap<String, String> getKeyValuePair() {
+		HashMap<String, String> data = new HashMap<>();
+		for (int i = 1; i <= sh.getLastRowNum(); i++) {
+			XSSFRow row = sh.getRow(i);
+			XSSFCell cel = row.getCell(0);
+			String keyy = getValueOfCellAccordingToCellType(cel);
+			cel = row.getCell(1);
+			String val = getValueOfCellAccordingToCellType(cel);
+
+			data.put(keyy, val);
+
+		}
+
+		return data;
+	}
+
+	@SuppressWarnings("deprecation")
+	private  static String getValueOfCellAccordingToCellType(XSSFCell cel) {
+		Object dd = null;
+		switch (cel.getCellType()) {
+		case STRING:
+			dd = cel.getStringCellValue();
+
+			break;
+		case BOOLEAN:
+			dd = cel.getBooleanCellValue();
+
+			break;
+		case NUMERIC:
+			dd = cel.getNumericCellValue();
+
+			break;
+		case FORMULA:
+			dd = cel.getCellFormula();
+
+			break;
+		case BLANK:
+			System.out.println("Cell does not have anything");
+
+			break;
+		default:
+			System.out.println("We do not have cell type case written");
+			break;
+		}
+
+		return dd.toString();
+	}
+
 }

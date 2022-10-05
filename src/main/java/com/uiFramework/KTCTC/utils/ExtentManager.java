@@ -1,5 +1,8 @@
 package com.uiFramework.KTCTC.utils;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
@@ -11,6 +14,9 @@ public class ExtentManager {
 	
 	public static ExtentReports getInstance(){
 		if(extent == null){
+			
+			Calendar calendar = Calendar.getInstance();
+			SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 			String location = System.getProperty("user.dir")+"\\src\\main\\resources\\reports\\extent.html";
 			return createInstance(location);
 		}
