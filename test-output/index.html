@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\91992\AppData\Local\Temp\testng-eclipse-1015443069\testng-customsuite.xml</span>
+                    <span>C:\Users\91992\AppData\Local\Temp\testng-eclipse-646306902\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="regression.InventoryCategoryTest" hash-for-method="verifyUserCanEditExistingCategory">verifyUserCanEditExistingCategory</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -123,12 +109,27 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="regression.InventoryCategoryTest" hash-for-method="verifyDeletedCategoryIsNotDisplayedOnCategoryPage">verifyDeletedCategoryIsNotDisplayedOnCategoryPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="regression.InventoryCategoryTest" hash-for-method="verifyExistingCategoryCanBeDeleted">verifyExistingCategoryCanBeDeleted</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="regression.InventoryCategoryTest" hash-for-method="verifyUpdatedCategoryIsDisplayedOnCategoryPage">verifyUpdatedCategoryIsDisplayedOnCategoryPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="regression.InventoryCategoryTest" hash-for-method="verifyUserCanAddNewCategoryOnCategoryPage">verifyUserCanAddNewCategoryOnCategoryPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="regression.InventoryCategoryTest" hash-for-method="verifyUserCanEditExistingCategory">verifyUserCanEditExistingCategory</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -143,56 +144,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">regression.InventoryCategoryTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUserCanEditExistingCategory">
-                  </a> <!-- verifyUserCanEditExistingCategory -->
-                  <span class="method-name">verifyUserCanEditExistingCategory</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	Count is falsely updated after updating category expected [51] but found [1]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at regression.InventoryCategoryTest.verifyUserCanEditExistingCategory(InventoryCategoryTest.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -204,6 +155,20 @@
                   <a name="verifyAddedCategoryIsDisplayedOnCategoryPage">
                   </a> <!-- verifyAddedCategoryIsDisplayedOnCategoryPage -->
                   <span class="method-name">verifyAddedCategoryIsDisplayedOnCategoryPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDeletedCategoryIsNotDisplayedOnCategoryPage">
+                  </a> <!-- verifyDeletedCategoryIsNotDisplayedOnCategoryPage -->
+                  <span class="method-name">verifyDeletedCategoryIsNotDisplayedOnCategoryPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyExistingCategoryCanBeDeleted">
+                  </a> <!-- verifyExistingCategoryCanBeDeleted -->
+                  <span class="method-name">verifyExistingCategoryCanBeDeleted</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -220,12 +185,19 @@
                   <span class="method-name">verifyUserCanAddNewCategoryOnCategoryPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCanEditExistingCategory">
+                  </a> <!-- verifyUserCanEditExistingCategory -->
+                  <span class="method-name">verifyUserCanEditExistingCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\91992\AppData\Local\Temp\testng-eclipse-1015443069\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\91992\AppData\Local\Temp\testng-eclipse-646306902\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -274,28 +246,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyUserCanAddNewCategoryOnCategoryPage')
+data.setCell(0, 1, 'verifyUpdatedCategoryIsDisplayedOnCategoryPage')
 data.setCell(0, 2, 'regression.InventoryCategoryTest')
-data.setCell(0, 3, 12755);
+data.setCell(0, 3, 10639);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyUserCanEditExistingCategory')
+data.setCell(1, 1, 'verifyDeletedCategoryIsNotDisplayedOnCategoryPage')
 data.setCell(1, 2, 'regression.InventoryCategoryTest')
-data.setCell(1, 3, 12252);
+data.setCell(1, 3, 10412);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyUpdatedCategoryIsDisplayedOnCategoryPage')
+data.setCell(2, 1, 'verifyUserCanAddNewCategoryOnCategoryPage')
 data.setCell(2, 2, 'regression.InventoryCategoryTest')
-data.setCell(2, 3, 5782);
+data.setCell(2, 3, 2393);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyAddedCategoryIsDisplayedOnCategoryPage')
+data.setCell(3, 1, 'verifyUserCanEditExistingCategory')
 data.setCell(3, 2, 'regression.InventoryCategoryTest')
-data.setCell(3, 3, 532);
+data.setCell(3, 3, 1702);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyExistingCategoryCanBeDeleted')
+data.setCell(4, 2, 'regression.InventoryCategoryTest')
+data.setCell(4, 3, 1646);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyAddedCategoryIsDisplayedOnCategoryPage')
+data.setCell(5, 2, 'regression.InventoryCategoryTest')
+data.setCell(5, 3, 406);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 31 seconds</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -328,65 +308,87 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClassOfA</span>
-                <span class="method-start">151 ms</span>
+                <span class="method-start">318 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void regression.InventoryCategoryTest.verifyUserCanAddNewCategoryOnCategoryPage())</span>
-                <span class="method-start">7522 ms</span>
+                <span class="method-start">8924 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUserCanAddNewCategoryOnCategoryPage</span>
-                <span class="method-start">7536 ms</span>
+                <span class="method-start">8948 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyUserCanAddNewCategoryOnCategoryPage status=SUCCESS method=InventoryCategoryTe...)</span>
-                <span class="method-start">20295 ms</span>
+                <span class="method-start">11346 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void regression.InventoryCategoryTest.verifyAddedCategoryIsDisplayedOnCategoryPage())</span>
-                <span class="method-start">20305 ms</span>
+                <span class="method-start">11354 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAddedCategoryIsDisplayedOnCategoryPage</span>
-                <span class="method-start">20311 ms</span>
+                <span class="method-start">11355 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyAddedCategoryIsDisplayedOnCategoryPage status=SUCCESS method=InventoryCategor...)</span>
-                <span class="method-start">20844 ms</span>
+                <span class="method-start">11764 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void regression.InventoryCategoryTest.verifyUserCanEditExistingCategory())</span>
-                <span class="method-start">20846 ms</span>
+                <span class="method-start">11766 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyUserCanEditExistingCategory</span>
-                <span class="method-start">20847 ms</span>
+                <span class="method-start">11767 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifyUserCanEditExistingCategory status=FAILURE method=InventoryCategoryTest.verif...)</span>
-                <span class="method-start">33103 ms</span>
+                <span class="method-name">afterMethod([TestResult name=verifyUserCanEditExistingCategory status=SUCCESS method=InventoryCategoryTest.verif...)</span>
+                <span class="method-start">13471 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void regression.InventoryCategoryTest.verifyUpdatedCategoryIsDisplayedOnCategoryPage())</span>
-                <span class="method-start">33391 ms</span>
+                <span class="method-start">13472 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUpdatedCategoryIsDisplayedOnCategoryPage</span>
-                <span class="method-start">33392 ms</span>
+                <span class="method-start">13472 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyUpdatedCategoryIsDisplayedOnCategoryPage status=SUCCESS method=InventoryCateg...)</span>
-                <span class="method-start">39177 ms</span>
+                <span class="method-start">24121 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void regression.InventoryCategoryTest.verifyExistingCategoryCanBeDeleted())</span>
+                <span class="method-start">24126 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyExistingCategoryCanBeDeleted</span>
+                <span class="method-start">24127 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyExistingCategoryCanBeDeleted status=SUCCESS method=InventoryCategoryTest.veri...)</span>
+                <span class="method-start">25774 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void regression.InventoryCategoryTest.verifyDeletedCategoryIsNotDisplayedOnCategoryPage())</span>
+                <span class="method-start">25775 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDeletedCategoryIsNotDisplayedOnCategoryPage</span>
+                <span class="method-start">25776 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyDeletedCategoryIsNotDisplayedOnCategoryPage status=SUCCESS method=InventoryCa...)</span>
+                <span class="method-start">36190 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">39179 ms</span>
+                <span class="method-start">36193 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuiteMethod</span>
-                <span class="method-start">40279 ms</span>
+                <span class="method-start">37407 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

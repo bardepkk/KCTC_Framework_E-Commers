@@ -1,12 +1,18 @@
 package com.uiFramework.KTCTC.Pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.uiFramework.KTCTC.helper.wait.WaitHelper;
 
 public class InventoryCategoryPage {
+	
+	WebDriver driver;
    // category navigation
 	
 	By categoryOptionUnderInventory = By.xpath("//*[starts-with(@href,'category')]");
@@ -36,13 +42,23 @@ public class InventoryCategoryPage {
 	// Filtered count
 	By filteredCountOnCategoryPage = By.xpath("//*[@id='example1_info' and contains (text(), 'filtered ')]");
 	
+	//@FindBy (xpath="//*[@id='example1_info' and contains (text(), 'filtered ')]")
+	//WebElement filter;
 	
-	public void navigateToCategoryPageFromInventory(WebDriver driver)
+	public InventoryCategoryPage(WebDriver driver)
+	{
+		this.driver = driver;
+		//PageFactory.initElements(driver, this);
+	}
+	
+	
+	
+	public void navigateToCategoryPageFromInventory()
 	{
 		driver.findElement(categoryOptionUnderInventory).click();
 	}
 	
-	public void addNewCategoryOnCategoryPage(WebDriver driver, String name)
+	public void addNewCategoryOnCategoryPage(String name)
 	{
 		driver.findElement(addNewButtonOnCategoryPage).click();
 		driver.findElement(nameTextBoxOnAddCategoryModal).sendKeys(name);
@@ -50,24 +66,25 @@ public class InventoryCategoryPage {
 		
 	}
 	
-	public void editExistingCategoryOnCategoryPage(WebDriver driver, String existingCategory, String newCategoryName)
+	public void editExistingCategoryOnCategoryPage(String existingCategory, String newCategoryName)
 	{
-		searchStringInSearchBox(driver, existingCategory);
+		searchStringInSearchBox( existingCategory);
 		driver.findElement(editButtonOnCategoryPage).click();
 		driver.findElement(editNameOnEditCategoryModal).clear();
 		driver.findElement(editNameOnEditCategoryModal).sendKeys(newCategoryName);
 		driver.findElement(updateButtonOnEditCategoryModal).click();
+		clearSearchBox();
 		
 	}
 	
-	public void deleteExistingCategoryOnCategoryPage(WebDriver driver, String name)
+	public void deleteExistingCategoryOnCategoryPage(String name)
 	{
-		searchStringInSearchBox(driver, name);
+		searchStringInSearchBox( name);
 		driver.findElement(deleteButtonOnCategoryPage).click();
 		driver.findElement(deleteButtonOnDeleteCategoryModal).click();
 	}
 	
-	public boolean isCategoryAddedSuccessfullyMessageDisplayed(WebDriver driver)
+	public boolean isCategoryAddedSuccessfullyMessageDisplayed()
 	{
 		boolean flag = false;
 
@@ -80,7 +97,7 @@ public class InventoryCategoryPage {
 		}
 		return flag;
 	}
-	public boolean isCategoryUpdatedSuccessfullyMessageDisplayed(WebDriver driver)
+	public boolean isCategoryUpdatedSuccessfullyMessageDisplayed()
 	{
 		boolean flag = false;
 
@@ -93,7 +110,7 @@ public class InventoryCategoryPage {
 		}
 		return flag;
 	}
-	public boolean isCategoryDeletedSuccessfullyMessageDisplayed(WebDriver driver)
+	public boolean isCategoryDeletedSuccessfullyMessageDisplayed()
 	{
 		boolean flag = false;
 
@@ -106,20 +123,21 @@ public class InventoryCategoryPage {
 		}
 		return flag;
 	}
-	public void clearSearchBox(WebDriver driver)
+	public void clearSearchBox()
 	{
-		driver.findElement(searchBoxOnCategoryPage).clear();
+		
+		driver.findElement(searchBoxOnCategoryPage).sendKeys(Keys.CONTROL+"A"+Keys.BACK_SPACE);
 	}
 	
-	public void searchStringInSearchBox(WebDriver driver, String data)
+	public void searchStringInSearchBox(String data)
 	{
-		clearSearchBox(driver);
+		clearSearchBox();
 		driver.findElement(searchBoxOnCategoryPage).sendKeys(data);
 	}
 
-	public boolean isMentionedCategoryPresentInTable(WebDriver driver, String name) {
+	public boolean isMentionedCategoryPresentInTable(String name) {
 		
-		searchStringInSearchBox(driver, name);
+		searchStringInSearchBox(name);
 		boolean flag = false;
 
 		try {
@@ -129,20 +147,13 @@ public class InventoryCategoryPage {
 		catch (Exception e) {
 			flag = false;
 		}
-		clearSearchBox(driver);
+		clearSearchBox();
 		return flag;
 
 	}
 	
-	public int getCountOfRecordsOnCategoryPage(WebDriver driver)
+	public int getCountOfRecordsOnCategoryPage()
 	{
-		try {
-			WaitHelper wt = new WaitHelper(driver);
-			wt.waitForElementNotPresent(driver.findElement(filteredCountOnCategoryPage), 5);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		
 		String count = driver.findElement(countOnCategoryPage).getText();
 		String[] arr = count.trim().split(" ");
