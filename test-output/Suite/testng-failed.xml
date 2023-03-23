@@ -1,30 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)" parallel="classes">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="KTCTC.regression.WebTablesTest2">
+      <class name="regression.InventoryCategoryTest">
         <methods>
-          <include name="afterMethod"/>
-          <include name="verifyExistringUserCanBeDeleted"/>
-          <include name="verifyNewUserCanBeAddedOnWebTablePage"/>
-          <include name="beforeSuite"/>
-          <include name="beforeClassOfA"/>
+          <include name="verifyExistingCategoryCanBeDeleted"/>
           <include name="afterClass"/>
-          <include name="verifyExistingUserCanBeEdited"/>
-          <include name="afterSuiteMethod"/>
+          <include name="afterMethod"/>
           <include name="beforeMethod"/>
-          <include name="verifyAllDetailsOfEditedUser"/>
-          <include name="verifyUserCanNavigateToWebTablePage"/>
-          <include name="verifyAllDetailsOfNewlyAddedUser"/>
+          <include name="beforeSuite"/>
+          <include name="verifyDeletedCategoryIsNotDisplayedOnCategoryPage"/>
+          <include name="verifyUserCanEditExistingCategory"/>
+          <include name="beforeClassOfA"/>
+          <include name="afterSuiteMethod"/>
+          <include name="verifyAddedCategoryIsDisplayedOnCategoryPage"/>
+          <include name="verifyUpdatedCategoryIsDisplayedOnCategoryPage"/>
+          <include name="verifyUserCanAddNewCategoryOnCategoryPage"/>
         </methods>
-      </class> <!-- KTCTC.regression.WebTablesTest2 -->
-      <class name="selnium.MyFirstMavenProject.AssertsInTestNG.enableDependentInvocation">
+      </class> <!-- regression.InventoryCategoryTest -->
+      <class name="regression.InventoryProductsTest">
         <methods>
-          <include name="verifyUserCanLoginToSystem"/>
-          <include name="verifyUserCanSendEmail"/>
+          <include name="verifyUserCanAddNewProduct"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuiteMethod"/>
+          <include name="beforeClassOfA"/>
         </methods>
-      </class> <!-- selnium.MyFirstMavenProject.AssertsInTestNG.enableDependentInvocation -->
+      </class> <!-- regression.InventoryProductsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
